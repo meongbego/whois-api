@@ -7,7 +7,7 @@ import os
 from app.helpers.rest import response
 
 
-WHOIS_PASSWORD = os.environ.get("PASSWORD", "admin")
+WHOIS_PASSWORD = os.environ.get("PASSWORD", os.getenv("PASSWORD"))
 
 
 def login_required(f):

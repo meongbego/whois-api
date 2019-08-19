@@ -4,8 +4,8 @@ from passlib.hash import pbkdf2_sha256
 import os
 from app.helpers import rest
 
-WHOIS_USERNAME = os.environ.get("USERNAME", "admin")
-WHOIS_PASSWORD = os.environ.get("PASSWORD", "admin")
+WHOIS_USERNAME = os.environ.get("USERNAME", os.getenv("USERNAME"))
+WHOIS_PASSWORD = os.environ.get("PASSWORD", os.getenv("PASSWORD"))
 
 
 class SignIn(Resource):
