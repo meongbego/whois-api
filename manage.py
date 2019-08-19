@@ -12,7 +12,7 @@ manager.add_command(
     "server",
     Server(
         host=os.environ.get("APP_HOST", os.getenv("APP_HOST")),
-        port=int(os.environ.get("APP_PORT", 5000)),
+        port=int(os.environ.get("APP_PORT", os.getenv("APP_PORT"))),
     ),
 )
 
