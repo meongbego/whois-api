@@ -4,3 +4,4 @@ Flask_Cors==3.0.7
 Flask==1.0.2
 Flask_Script==2.0.6
 python-dotenv==0.10.3
+git+https://github.com/BiznetGIO/python-whois
